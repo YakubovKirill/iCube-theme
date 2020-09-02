@@ -1,0 +1,47 @@
+@font-face{
+  font-family: 'NotoSerif';
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf");
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'NotoSerif';
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf");
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'NotoSerif';
+  src: url("../fonts/NotoSerif/NotoSerif-Bold.ttf");
+  src: url("../fonts/NotoSerif/NotoSerif-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'NotoSerif';
+  src: url("../fonts/NotoSerif/NotoSerif-Italic.ttf");
+  src: url("../fonts/NotoSerif/NotoSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'NotoSerif';
+  src: url("../fonts/NotoSerif/NotoSerif-BoldItalic.ttf");
+  src: url("../fonts/NotoSerif/NotoSerif-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'KronaOne';
+  src: url("../fonts/NotoSerif/NotoSerif-BoldItalic.ttf");
+  src: url("../fonts/KoronaOne/KronaOne-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

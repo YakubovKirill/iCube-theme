@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in;
+}
+
+html, body {
+  height: 100%;
+  min-width: 350px;
+  min-height: 450px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  min-height: 120px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#news-wrapper, footer {
+  display: grid;
+}
+
+#news-line {
+  width: 80%;
+  height: 100%;
+  max-width: 1200px;
+}
+
+#logo-text {
+  font-size: 40px;
+  font-family: "KronaOne", sans-serif;
+}
+
+#logo-main {
+  display: flex;
+  width: auto;
+}
+
+#label-categories {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#news {
+  padding-left: 2%;
+  padding-right: 1%;
+  height: 80%;
+  min-height: -webkit-max-content;
+  min-height: max-content;
+  display: block;
+}
+
+#footer-container {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer-container a {
+  background-color: white;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  border-radius: 35%;
+  text-align: center;
+}
+#footer-container a i {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+#footer-container a:hover i {
+  color: #fafafa;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+#telegram {
+  color: #24a8e9;
+}
+
+#telegram:hover {
+  background: #24a8e9;
+}
+
+#instagram {
+  color: #fd3333;
+}
+
+#instagram:hover {
+  background: #f1e23b;
+  background: -webkit-gradient(left bottom, right top, color-stop(8%, #f1e23b), color-stop(10%, #f1e23b), color-stop(53%, #e33030), color-stop(100%, #8a27e6));
+  background: linear-gradient(45deg, #f1e23b 8%, #f1e23b 10%, #e33030 53%, #8a27e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f1e23b", endColorstr="#8a27e6", GradientType=1 );
+}
+
+#footer-label {
+  font-size: 30px;
+  font-family: "KronaOne", sans-serif;
+  margin: 20px;
+}
+
+.news-container {
+  width: 47%;
+  margin: 1%;
+  float: left;
+  border-radius: 10px;
+  height: 280px;
+  position: relative;
+  box-shadow: 0px 7px 15px 4px #c1c1c1;
+  cursor: pointer;
+}
+
+.news-info {
+  width: -webkit-max-content;
+  width: max-content;
+  margin: 0 20px;
+  font-size: 15px;
+  float: left;
+  font-family: "NotoSerif", serif;
+}
+
+.news-label {
+  position: absolute;
+  bottom: 15px;
+  margin: 0 20px;
+  z-index: 3;
+}
+
+.news-inf {
+  width: 100%;
+  float: none;
+  display: flex;
+}
+
+.news-header {
+  float: none;
+  margin: 20px 20px;
+  font-size: 25px;
+}
+.news-header span {
+  font-family: "NotoSerif", serif;
+}
+
+.news-img {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  transition: all 0.2s ease-in;
+}
+
+.card-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(-180deg, transparent 0, rgba(0, 0, 0, 0.6) 100%);
+}
+
+a:hover .card-overlay {
+  transition: 0.5s;
+  transform: scale(1.01);
+  background: linear-gradient(-180deg, transparent 0, rgba(43, 43, 43, 0.5) 100%);
+}
+a:hover .news-img {
+  transition: 0.5s;
+  transform: scale(1.01);
+  z-index: 0;
+}
+
+.label {
+  font-size: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "NotoSerif", serif;
+}
+
+@media screen and (max-width: 1200px) {
+  #news-line {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #news-line {
+    width: 100%;
+  }
+
+  #logo-text {
+    font-size: 30px;
+    margin: 15%;
+  }
+
+  #footer-label {
+    font-size: 25px;
+    margin: 15px;
+  }
+
+  #label-categories {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .news-container {
+    width: 90%;
+    margin: 3%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #label-categories {
+    height: 80px;
+  }
+
+  .label {
+    font-size: 25px;
+    margin: 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #logo-text {
+    font-size: 25px;
+    margin: 15%;
+  }
+
+  #footer-label {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .label {
+    font-size: 20px;
+    margin: 5%;
+  }
+}
