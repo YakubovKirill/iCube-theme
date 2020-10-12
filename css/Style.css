@@ -89,11 +89,12 @@ a {
   margin: 20px;
   border-radius: 35%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #footer-container a i {
   font-size: 30px;
-  margin-top: 10px;
-  margin-left: 2px;
 }
 #footer-container a:hover i {
   color: #fafafa;
