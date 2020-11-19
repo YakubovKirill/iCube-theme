@@ -86,6 +86,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .m-left-40 {
@@ -244,7 +245,7 @@ footer {
   }
 
   .news-line-wrap .news-line {
-    width: 100%;
+    width: auto;
   }
 
   .news-container {
@@ -282,6 +283,10 @@ footer {
     font-size: 25px;
   }
 
+  .news-line-wrap .news-line {
+    width: 450px;
+  }
+
   .news-container {
     width: 450px;
     height: 200px;
@@ -308,6 +313,10 @@ footer {
   .news-container {
     width: 300px;
     height: 150px;
+  }
+
+  .news-line-wrap .news-line {
+    width: 300px;
   }
 
   .news-header {
